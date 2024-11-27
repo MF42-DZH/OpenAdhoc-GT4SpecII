@@ -485,7 +485,7 @@ module GTmodeProject::PresentRoot::CarPane
         {
             if (randomizer_enabled == 1)
             {
-                car = PresentData::allcars_carlist[main::menu::MRandom::GetValue(0, PresentData::allcars_carnum-1, fnv1a(main::game.username + race + func))];
+                car = PresentData::allcars_carlist[main::menu::MRandom::GetValue(0, PresentData::allcars_carnum, fnv1a(main::game.username + race + func))];
                 col = "-";
                 Shuffle.visible = true;
             }
